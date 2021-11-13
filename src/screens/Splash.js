@@ -1,11 +1,14 @@
 import React from "react";
-import {View, Text, Image, Button} from 'react-native';
+import {View, Text, Image, Button, SafeAreaView} from 'react-native';
+
+import { StylishInput } from "../components/StylishInput";
 
 import {widthPercentageToDP as w, heightPercentageToDP as h} from 'react-native-responsive-screen';
 
 export class Splash extends React.Component{
     render(){
         return(
+            <SafeAreaView style={{ flex:1}}>
             <View style={{ flex:1}}>
 
                 <View style={{
@@ -42,6 +45,7 @@ export class Splash extends React.Component{
                     alignItems:'center',
                     justifyContent:'center',
                     marginTop: h('3%'),
+                    marginBottom: h('1.6%'),
                 }}>
                     <Text style={{
                         color:'#fff',
@@ -52,10 +56,15 @@ export class Splash extends React.Component{
                 </View>
                </View>
 
-               
+               <View>
+                   <StylishInput/>
+               </View>
+
+                
 
 
             </View>
+            </SafeAreaView>
         )
     }
 }
