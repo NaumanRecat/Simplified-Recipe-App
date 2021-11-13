@@ -5,13 +5,14 @@ import {
   Text,
   View,
 } from 'react-native';
+import { Splash } from './src/screens/Splash';
 
 const App = () => {
 
   return (
     <SafeAreaView>
 
-      <Text> Testing on this screen </Text>
+      <Splash/>
       
     </SafeAreaView>
   );
