@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 import { Splash } from '../screens/Splash';
+import {Login} from '../screens/Login';
 
 
 
@@ -13,6 +14,7 @@ export const ScreenNavigator =()=>  {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen name="Login" component={Login}  options={{headerShown:false}} />
       <Stack.Screen name="Splash" component={Splash}  options={{headerShown:false}} />
       </Stack.Navigator>
     </NavigationContainer>
