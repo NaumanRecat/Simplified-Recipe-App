@@ -6,7 +6,7 @@ export class Splash extends React.Component{
         return(
             <View>
                 <Text>
-                    Splash Screen
+                    Splash Screen is the love 
                 </Text>
             </View>
         )
