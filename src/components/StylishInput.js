@@ -24,8 +24,12 @@ export class StylishInput extends React.Component{
             // backgroundColor:'#ada',
             borderWidth: h('0.1%'),
             borderRadius: h('4%'),
+            alignItems:'center',
+            justifyContent:'center',
           
-        }}></View>
+        }}>
+            {this.props.img}
+        </View>
 
         <TextInput style={{
             height:h('8%'),

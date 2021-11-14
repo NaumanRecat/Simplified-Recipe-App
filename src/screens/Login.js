@@ -37,9 +37,9 @@ export class Login extends React.Component{
                     marginTop:h('3%'),
                     alignItems:'center',
                 }}>
-                    <StylishInput/>
+                    <StylishInput img={<Image source={require('../assests/12.jpg')} />} />
                     <Text style={{ color: 'red'}}> { "*Enter correct username/Email"} </Text>
-                    <StylishInput/>
+                    <StylishInput img={<Image source={require('../assests/lo.png')} />}/>
                     <Text style={{ color: 'red'}}> { "*Enter Correct Password"} </Text>
                 </View>
 

@@ -5,20 +5,18 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {widthPercentageToDP as w, heightPercentageToDP as h} from 'react-native-responsive-screen';
 import { StylishInput } from "../components/StylishInput";
-import { Header } from "../components/Header";
 
-export class Profile extends React.Component{
+export class Header extends React.Component{
     render(){
         return(
-            <View>
-                
-                 <View style={{
-                   flex:1,
-                     backgroundColor:'#fff',
-
-                 }}>
-                    <Header/>
-                 </View>
+            <View style={{
+                height: h('8%'),
+                width: w('100%'),
+                backgroundColor: '#ada',
+                // alignItems:'center',
+                justifyContent:'center',
+            }}>
+                 <Image source={require('../assests/hb.png')} />
             </View>
         )
     }
