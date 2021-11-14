@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Splash } from '../screens/Splash';
 import {Login} from '../screens/Login';
 import { Signup } from '../screens/Signup';
+import { Profile } from '../screens/Profile';
 
 
 
@@ -15,6 +16,7 @@ export const ScreenNavigator =()=>  {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen name="Profile" component={Profile}  options={{headerShown:false}} />
       <Stack.Screen name="Signup" component={Signup}  options={{headerShown:false}} />
       <Stack.Screen name="Login" component={Login}  options={{headerShown:false}} />
       <Stack.Screen name="Splash" component={Splash}  options={{headerShown:false}} />
