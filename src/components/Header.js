@@ -12,11 +12,12 @@ export class Header extends React.Component{
             <View style={{
                 height: h('8%'),
                 width: w('100%'),
-                backgroundColor: '#ada',
+                // backgroundColor: '#ada',
                 // alignItems:'center',
                 justifyContent:'center',
+               
             }}>
-                 <Image source={require('../assests/hb.png')} />
+                 <Image  source={require('../assests/hb.png')} />
             </View>
         )
     }
