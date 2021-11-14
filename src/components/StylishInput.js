@@ -22,7 +22,7 @@ export class StylishInput extends React.Component{
             height:h('8%'),
             width:w('13%'),
             // backgroundColor:'#ada',
-            borderWidth: h('0.05%'),
+            borderWidth: h('0.1%'),
             borderRadius: h('4%'),
           
         }}></View>
@@ -31,7 +31,7 @@ export class StylishInput extends React.Component{
             height:h('8%'),
             width:w('71%'),
             // backgroundColor:'#ada',
-            borderWidth: h('0.05%'),
+            borderWidth: h('0.1%'),
             borderRadius: h('4%'),
             marginLeft: h('0.7%'),
         }}
