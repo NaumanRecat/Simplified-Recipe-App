@@ -18,40 +18,40 @@ export class Recipe extends React.Component{
             Time: '11hr 45min',
 
             name1: 'New Cafe pizza Recipes',
-            img1: require('../assests/r.png'),
+            img1: require('../assests/11.png'),
             imgtxt1: 'Alex',
             Time1: '95cl',
           },
           {
             name: 'Palao with Chicken Recipes',
-            img: require('../assests/r.png'),
+            img: require('../assests/22.png'),
             imgtxt: 'Jack',
             Time: '1hr 25min',
 
             name1: '13 Pizza with tamato recipes',
-            img1: require('../assests/r.png'),
+            img1: require('../assests/33.png'),
             imgtxt1: 'Herry',
             Time1: '45 mint',
           },
           {
             name: 'Avocado with Nuts Recipe',
-            img: require('../assests/r.png'),
+            img: require('../assests/44.png'),
             imgtxt: 'John',
             Time: '11hr 45min',
 
             name1: 'New Cafe pizza Recipes',
-            img1: require('../assests/r.png'),
+            img1: require('../assests/55.png'),
             imgtxt1: 'Alex',
             Time1: '95cl',
           },
           {
             name: 'Palao with Chicken Recipes',
-            img: require('../assests/r.png'),
+            img: require('../assests/33.png'),
             imgtxt: 'Jack',
             Time: '1hr 25min',
 
             name1: '13 Pizza with tamato recipes',
-            img1: require('../assests/r.png'),
+            img1: require('../assests/11.png'),
             imgtxt1: 'Herry',
             Time1: '45 mint',
           },
@@ -132,7 +132,7 @@ export class Recipe extends React.Component{
                 width: h('25%'),
                 borderRadius: h('3%'),
               }}
-              source={item.img}
+              source={item.img1}
               resizeMode={'cover'}
             />
             <Text style={{fontWeight:'600', fontSize: h('3'), marginBottom: h('1%')}}> {item.name1} </Text>
