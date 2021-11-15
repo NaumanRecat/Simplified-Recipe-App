@@ -8,6 +8,7 @@ import {Login} from '../screens/Login';
 import { Signup } from '../screens/Signup';
 import { Profile } from '../screens/Profile';
 import { Friend } from '../screens/Friend';
+import {Recipe} from '../screens/Recipe';
 
 
 
@@ -17,6 +18,7 @@ export const ScreenNavigator =()=>  {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen name="Recipe" component={Recipe}  options={{headerShown:false}} />
       <Stack.Screen name="Friend" component={Friend}  options={{headerShown:false}} />
       <Stack.Screen name="Profile" component={Profile}  options={{headerShown:false}} />
       <Stack.Screen name="Signup" component={Signup}  options={{headerShown:false}} />
