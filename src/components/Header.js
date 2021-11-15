@@ -13,11 +13,31 @@ export class Header extends React.Component{
                 height: h('8%'),
                 width: w('100%'),
                 // backgroundColor: '#ada',
-                // alignItems:'center',
-                justifyContent:'center',
-               
+                flexDirection:'row',
             }}>
+                 <View style={{
+                      height: h('8%'),
+                      width: w('50%'),
+                    //   backgroundColor: '#ac2',
+                      justifyContent:'center',
+                      marginLeft: h('2%'),
+                 }}>
                  <Image  source={require('../assests/hb.png')} />
+                 </View>
+
+                 <View style={{
+                      height: h('8%'),
+                      width: w('44%'),
+                    //   backgroundColor: '#ac2',
+                      alignItems:'flex-end',
+                      justifyContent:'center',
+                      marginRight: h('2%'),
+                 }} >
+                 <Image  source={require('../assests/plus.jpg')} />
+                 </View>
+
+
+
             </View>
         )
     }
