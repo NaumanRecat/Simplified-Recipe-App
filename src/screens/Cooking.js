@@ -109,17 +109,96 @@ export class Cooking extends React.Component{
                                             color:'#fff'
                                         }}> Start Cooking</Text>
                                     </View>
-                                </View>
-{/* Next */}
-                            
-
-
-
-
-
-
-
+                                </View>                        
                             </View>
+{/* Next */}
+
+                            <View style={{
+                                marginTop: h('2%'),
+                                height:h('10%'),
+                                width: w('95%'),
+                                // backgroundColor:'#367460',
+                                flexDirection:'row',
+                                borderBottomWidth: h('0.1%'),
+                                
+                            }}>
+                                <View style={{
+                                    height:h('10%'),
+                                    width: w('33%'),
+                                    alignItems:'center',
+                                    justifyContent:'center',
+                                }}>
+                                    <Text>
+                                        Serving
+                                    </Text>
+                                    <Text style={{
+                                        fontWeight:'bold',
+                                    }}>
+                                        2pp
+                                    </Text>
+                                </View>
+                                <View style={{
+                                   height:h('10%'),
+                                   width: w('33%'),
+                                   alignItems:'center',
+                                   justifyContent:'center',
+                                }}>
+                                <Text>
+                                        Prep Time
+                                    </Text>
+                                    <Text style={{
+                                        fontWeight:'bold',
+                                    }}>
+                                        45 m
+                                    </Text>
+                                </View>
+                                <View style={{
+                                   height:h('10%'),
+                                   width: w('33%'),
+                                   alignItems:'center',
+                                   justifyContent:'center',
+                                }}>
+                                <Text>
+                                        Cook Time
+                                    </Text>
+                                    <Text style={{
+                                        fontWeight:'bold',
+                                    }}>
+                                        20 m
+                                    </Text>
+                                </View>
+                            </View>
+
+{/* Description */}
+
+                            <View style={{
+                                marginTop:h('1%'),
+                            }}>
+                                <Text>
+                                Ingredients
+                                </Text>
+                                <Text>
+                                2 oz gin
+                                </Text>
+                                <Text>
+                                1 oz lychee liqueur
+                                </Text>
+                                <Text>
+                                1 oz lime juice
+                                </Text>
+                                <Text>
+                                0.5 oz simple syrup
+                                </Text>
+                                <Text> 
+                                    Instruction
+                                </Text>
+                                <Text>
+                                Combine all ingredients into a shaker with ice, and shake until well chilled. Double strain into a Combine all ingredients into a shaker with ice, and shake until well chilled. Double strain into aCombine 
+                                </Text>
+                            </View>
+
+
+                            
                         </View>
                     </View>
 
