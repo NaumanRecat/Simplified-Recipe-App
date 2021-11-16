@@ -32,13 +32,13 @@ state ={
                     <Text style={{fontSize:h('3%'), color:'#000', fontWeight:'500', marginLeft: h('3%')}}>My Profile</Text>
 
                     <View style={{
-                        height:h('22%'),
+                        height:h('15%'),
                         width:w('100%'),
                         // backgroundColor:'#342',
                         alignItems:'center',
                         justifyContent:'center',
                     }} >
-                        <Image style={{height:h('22%'), }} source={require('../assests/pfi.png')} />
+                        <Image style={{height:h('15%'), width:w('25%') }} source={require('../assests/pfi.png')} />
                     </View>
 
                     <View style={{
@@ -48,6 +48,7 @@ state ={
                     }}>
                     <View style={{ 
                     width:w('85%'), 
+                    height:h('45%'),
                     justifyContent:'center',
                     // backgroundColor:'#adf',
                     marginTop: h('1%'),
@@ -73,13 +74,13 @@ state ={
 
                     <View style={{ alignItems:'center'}}>
                <View style={{
-                    height:h('8%'),
+                    height:h('7%'),
                     width:w('85%'),
                     backgroundColor:'#367460',
                     borderRadius:h('4%'),
                     alignItems:'center',
                     justifyContent:'center',
-                    marginTop: h('3%'),
+                    marginTop: h('6%'),
                     marginBottom: h('1.6%'),
                 }}>
                     <Text style={{

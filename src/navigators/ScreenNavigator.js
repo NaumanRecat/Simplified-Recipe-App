@@ -10,6 +10,7 @@ import { Profile } from '../screens/Profile';
 import { Friend } from '../screens/Friend';
 import {Recipe} from '../screens/Recipe';
 import { RecipeDes } from '../screens/RecipeDes';
+import { TabNavigator } from './TabNavigator';
 
 
 
@@ -19,6 +20,7 @@ export const ScreenNavigator =()=>  {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen name="TabNavigator" component={TabNavigator}  options={{headerShown:false}} />
       <Stack.Screen name="RecipeDes" component={RecipeDes}  options={{headerShown:false}} />
       <Stack.Screen name="Recipe" component={Recipe}  options={{headerShown:false}} />
       <Stack.Screen name="Friend" component={Friend}  options={{headerShown:false}} />
