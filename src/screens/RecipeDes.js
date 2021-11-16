@@ -20,16 +20,17 @@ export class RecipeDes extends React.Component{
                     <Header/>
                     {/* Step 1 */}
                     <View style={{
-                        height:h('12%'),
-                        width:w('100%'),
+                        height:h('9%'),
+                        width:w('90%'),
                         // backgroundColor:'#ada',
-                        borderBottomWidth: h('0.1%'),
+                        borderBottomWidth: h('0.03%'),
                         marginLeft: h('5%'),
+                        // marginTop: h('1%'),
                     }}>
                         <Text style={{
                             fontWeight:'bold',
                             fontSize:h('5%'),
-                            marginTop:h('4%'),
+                            marginTop:h('1%'),
                             color:'#000',
 
                         }}>
@@ -43,25 +44,25 @@ export class RecipeDes extends React.Component{
                          marginLeft: h('5%'),
                     }}>
                         <Text style={{
-                            fontWeight:'bold',
-                            fontSize:h('3%'),
-                            marginTop:h('2.5%'),
+                            fontWeight:'600',
+                            fontSize:h('2.5%'),
+                            marginTop:h('1%'),
                             color:'#000',
                         }}>
-                            Vedio / Photo Title
+                            Video / Photo Title
                         </Text>
                     </View>
 
                     {/* Image */}
 
                     <View style={{
-                        height:h('35%'),
+                        height:h('30%'),
                         width: w('100%'),
                         backgroundColor:'#faf',
-                        marginTop: h('1%'),
+                        marginTop: h('2%'),
                     }}>
                         <Image style={{
-                             height:h('35%'),
+                             height:h('30%'),
                              width: w('100%'),
                         }} source={require('../assests/r.png')} />
                     </View>
@@ -99,7 +100,7 @@ export class RecipeDes extends React.Component{
                <View style={{
                     height:h('8%'),
                     width:w('85%'),
-                    backgroundColor:'#EDF1F5',
+                    backgroundColor:'#EDF1F9',
                     borderRadius:h('4%'),
                     alignItems:'center',
                     justifyContent:'center',
