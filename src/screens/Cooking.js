@@ -86,7 +86,11 @@ export class Cooking extends React.Component{
                                     }}> Jack</Text>
                                 </View>
 {/* 3rd View */}
-                                <View style={{
+                                <TouchableOpacity onPress={
+                                    ()=>{
+                                        this.props.navigation.navigate('RecipeDes')
+                                    }
+                                } style={{
                                     height:h('5%'),
                                     width: w('65%'),
                                     // backgroundColor:'yellow',
@@ -109,7 +113,7 @@ export class Cooking extends React.Component{
                                             color:'#fff'
                                         }}> Start Cooking</Text>
                                     </View>
-                                </View>                        
+                                </TouchableOpacity>                        
                             </View>
 {/* Next */}
 

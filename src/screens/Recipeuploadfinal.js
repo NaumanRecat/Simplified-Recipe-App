@@ -320,8 +320,10 @@ export class Recipeuploadfinal extends React.Component{
 
 {/* Last Button */}
 
-<View style={{ alignItems:'center'}}>
-               <View style={{
+               <View style={{ alignItems:'center'}}>
+               <TouchableOpacity onPress={()=>{
+                   this.props.navigation.navigate('RecipeUpload')
+               }} style={{
                     height:h('8%'),
                     width:w('85%'),
                     backgroundColor:'#367460',
@@ -337,7 +339,7 @@ export class Recipeuploadfinal extends React.Component{
                         fontSize:h('2.5%'),
                     }}> Update Recipe Now </Text>
 
-                </View>
+                </TouchableOpacity>
                </View>
 
 

@@ -73,7 +73,9 @@ export class Recipe extends React.Component{
 
           {/* View 1 */}
 
-          <View style={{
+          <TouchableOpacity onPress={()=>{
+            this.props.navigation.navigate('Cooking')
+          }} style={{
               marginLeft:h('3%'),
           }}>
               {/* View 1 Image */}
@@ -111,13 +113,17 @@ export class Recipe extends React.Component{
               </View>
               <Text style={{fontSize:h('2%')}}> {item.Time} </Text>
           </View>
-          </View>
+          </TouchableOpacity>
 
 
 
               {/* View 2 */}
 
-          <View style={{
+          <TouchableOpacity onPress={
+            ()=>{
+              this.props.navigation.navigate('Cooking')
+            }
+          } style={{
               marginRight:h('3%')
           }}>
           <View
@@ -160,7 +166,7 @@ export class Recipe extends React.Component{
 
               <Text style={{fontSize:h('2%')}}> {item.Time1} </Text>
           </View>
-          </View>
+          </TouchableOpacity>
 
 
           

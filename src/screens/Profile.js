@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, SafeAreaView, Image, TextInput} from 'react-native';
+import {View, Text, SafeAreaView, Image, TextInput, TouchableOpacity} from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -73,7 +73,9 @@ state ={
                     </View>
 
                     <View style={{ alignItems:'center'}}>
-               <View style={{
+               <TouchableOpacity onPress={()=>{
+                   this.props.navigation.navigate('Friend')
+               }} style={{
                     height:h('7%'),
                     width:w('85%'),
                     backgroundColor:'#367460',
@@ -89,7 +91,7 @@ state ={
                         fontSize:h('2.5%'),
                     }}> Save Changes </Text>
 
-                </View>
+                </TouchableOpacity>
                </View>
 
                     

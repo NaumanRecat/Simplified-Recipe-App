@@ -57,7 +57,9 @@ export class RecipeUpload extends React.Component{
 
 {/* Save Button */}
 <View style={{ alignItems:'center'}}>
-               <View style={{
+               <TouchableOpacity onPress={()=>{
+                   this.props.navigation.navigate('Profile')
+               }} style={{
                     height:h('8%'),
                     width:w('60%'),
                     backgroundColor:'#EDF1F9',
@@ -73,7 +75,7 @@ export class RecipeUpload extends React.Component{
                         fontSize:h('2.5%'),
                     }}> Save </Text>
 
-                </View>
+                </TouchableOpacity>
                </View>
 
 

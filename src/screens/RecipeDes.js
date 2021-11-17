@@ -97,7 +97,11 @@ export class RecipeDes extends React.Component{
                    {/* Button */}
 
                    <View style={{ alignItems:'center'}}>
-               <View style={{
+               <TouchableOpacity 
+                    onPress={()=>{
+                        this.props.navigation.navigate('Recipeuploadfinal')
+                    }}
+               style={{
                     height:h('8%'),
                     width:w('85%'),
                     backgroundColor:'#EDF1F9',
@@ -113,7 +117,7 @@ export class RecipeDes extends React.Component{
                         fontSize:h('2.5%'),
                     }}> Next Step </Text>
 
-                </View>
+                </TouchableOpacity>
                </View>
 
 

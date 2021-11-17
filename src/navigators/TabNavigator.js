@@ -9,10 +9,10 @@ import {
 import {List} from '../screens/list';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
+import {Recipe} from '../screens/Recipe';
 import {Profile} from '../screens/Profile';
 import { RecipeDes } from '../screens/RecipeDes';
 import {Friend} from '../screens/Friend';
-import {Recipe} from '../screens/Recipe';
 import {Login} from '../screens/Login';
 
 const Tab = createBottomTabNavigator();
