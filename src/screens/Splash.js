@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, Image, Button, SafeAreaView} from 'react-native';
+import {View, Text, Image, Button, SafeAreaView, TouchableOpacity} from 'react-native';
 
 import { StylishInput } from "../components/StylishInput";
 
@@ -20,13 +20,14 @@ export class Splash extends React.Component{
                 </View>
 
                 <View style={{
-                    marginTop:h('2%'),
+                    marginTop:h('1%'),
                     alignItems:'center',
                     justifyContent:'center',
                 }}>
                 <Text style={{
                     fontWeight:'600',
                     fontSize:h('5%'),
+                    color:'#000'
                 }}>
                     Welcome
                 </Text>
@@ -36,7 +37,9 @@ export class Splash extends React.Component{
                 </View>
 
 
-               <View style={{ alignItems:'center'}}>
+               <TouchableOpacity onPress={()=>{
+                   this.props.navigation.navigate('Login')
+               }} style={{ alignItems:'center'}}>
                <View style={{
                     height:h('8%'),
                     width:w('85%'),
@@ -54,10 +57,12 @@ export class Splash extends React.Component{
                     }}> Sign in </Text>
 
                 </View>
-               </View>
+               </TouchableOpacity>
 
                <View>
-                   <StylishInput/>
+                   <StylishInput 
+                   img={require('../assests/lock.png')}
+                   />
                </View>
 
            <View style={{

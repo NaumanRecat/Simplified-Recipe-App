@@ -28,7 +28,8 @@ export class StylishInput extends React.Component{
             justifyContent:'center',
           
         }}>
-            {this.props.img}
+            <Image source={this.props.img } />
+            {/* {this.props.img} */}
         </View>
 
         <TextInput style={{

@@ -23,6 +23,8 @@ export const ScreenNavigator =()=>  {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen name="Splash" component={Splash}  options={{headerShown:false}} />
+      <Stack.Screen name="Login" component={Login}  options={{headerShown:false}} />
       <Stack.Screen name="Recipeuploadfinal" component={Recipeuploadfinal}  options={{headerShown:false}} />
       <Stack.Screen name="RecipeUpload" component={RecipeUpload}  options={{headerShown:false}} />
       <Stack.Screen name="Cooking" component={Cooking}  options={{headerShown:false}} />
@@ -32,8 +34,8 @@ export const ScreenNavigator =()=>  {
       <Stack.Screen name="Friend" component={Friend}  options={{headerShown:false}} />
       <Stack.Screen name="Profile" component={Profile}  options={{headerShown:false}} />
       <Stack.Screen name="Signup" component={Signup}  options={{headerShown:false}} />
-      <Stack.Screen name="Login" component={Login}  options={{headerShown:false}} />
-      <Stack.Screen name="Splash" component={Splash}  options={{headerShown:false}} />
+      
+      
       </Stack.Navigator>
     </NavigationContainer>
   );
