@@ -13,6 +13,7 @@ import { RecipeDes } from '../screens/RecipeDes';
 import { TabNavigator } from './TabNavigator';
 import {Cooking} from '../screens/Cooking';
 import { RecipeUpload } from '../screens/RecipeUpload';
+import {Recipeuploadfinal} from '../screens/Recipeuploadfinal';
 
 
 
@@ -22,6 +23,7 @@ export const ScreenNavigator =()=>  {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen name="Recipeuploadfinal" component={Recipeuploadfinal}  options={{headerShown:false}} />
       <Stack.Screen name="RecipeUpload" component={RecipeUpload}  options={{headerShown:false}} />
       <Stack.Screen name="Cooking" component={Cooking}  options={{headerShown:false}} />
       <Stack.Screen name="TabNavigator" component={TabNavigator}  options={{headerShown:false}} />
