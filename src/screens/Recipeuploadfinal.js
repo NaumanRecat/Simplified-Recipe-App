@@ -198,14 +198,14 @@ export class Recipeuploadfinal extends React.Component{
                          marginTop: h('3%'),
                          marginLeft:h('5%'),
                     }}>
-                        <Text> Description</Text>
+                        <Text> Ingrediants</Text>
                         <TextInput style={{
                             height: h('20%'),
                             width: w('80%'),
                             borderWidth:h('0.1%'),
                             marginTop: h('2%'),
                             borderRadius: h('1%'),
-                        }} placeholder={'Type Step Description'} />
+                        }} placeholder={'Type Recipe Ingrediant'} />
                     </View>
 
                     {/* Des 2 */}
@@ -216,14 +216,14 @@ export class Recipeuploadfinal extends React.Component{
                          
                          
                     }}>
-                        <Text> Description</Text>
+                        <Text> Instruction </Text>
                         <TextInput style={{
                             height: h('20%'),
                             width: w('80%'),
                             borderWidth:h('0.1%'),
                             marginTop: h('2%'),
                             borderRadius: h('1%'),
-                        }} placeholder={'Type Step Description'} />
+                        }} placeholder={'Type Recipe Instruction'} />
                     </View>
 
                         <View style={{
@@ -233,21 +233,113 @@ export class Recipeuploadfinal extends React.Component{
                             <Text style={{
                                 height:h('5%'), 
                                 width:w('97%'),
-                                backgroundColor:'#faf',
+                                // backgroundColor:'#faf', 
                                 justifyContent:'center',
                                 marginLeft: h('3%'),
                                 fontSize: h('3.5%'),
                                 fontWeight:'bold',
-                                color:'#000'
+                                color:'#000',
+                                marginTop: h('2%')
                             }}>
                                 Add Cooking Step
-                            </Text>
-
-                            {/* step 1 */}
-
+                            </Text>                
                             
                         </View>
                    
+{/* St */}
+                            <View style={{
+                                height: h('8%'),
+                                width: w('85%'),
+                                // backgroundColor:'#ada',
+                                flexDirection:'row',
+                                alignItems:'center',
+                                justifyContent:'center',
+                                marginLeft: h('5%'),
+                                marginTop: h('3%')
+                            }}>
+                                <View style={{
+                                    height: h('8%'),
+                                    width: w('75%'),
+                                    marginTop: h('3%')
+                                }}>
+                                    <Text style={{
+                                        fontSize: h('3%')
+                                    }}> Step 1 Added </Text>
+                                </View>
+                                <View>
+                                    <Image source={require('../assests/tick.png')} />
+                                </View>
+                            </View>
+{/* st 2 */}
+
+<View style={{
+                                height: h('8%'),
+                                width: w('85%'),
+                                // backgroundColor:'#ada',
+                                flexDirection:'row',
+                                alignItems:'center',
+                                justifyContent:'center',
+                                marginLeft: h('5%'),
+                                marginTop: h('3%')
+                            }}>
+                                <View style={{
+                                    height: h('8%'),
+                                    width: w('75%'),
+                                    marginTop: h('3%')
+                                }}>
+                                    <Text style={{
+                                        fontSize: h('3%')
+                                    }}> Step 1 Added </Text>
+                                </View>
+                                <View>
+                                    <Image source={require('../assests/tick.png')} />
+                                </View>
+                            </View>
+
+{/* Buton */}
+
+            <View style={{ alignItems:'center'}}>
+               <View style={{
+                    height:h('8%'),
+                    width:w('60%'),
+                    backgroundColor:'#EDF1F9',
+                    borderRadius:h('4%'),
+                    alignItems:'center',
+                    justifyContent:'center',
+                    marginTop: h('3%'),
+                    marginBottom: h('1.6%'),
+                }}>
+                    <Text style={{
+                        color:'#367460',
+                        fontWeight:'500',
+                        fontSize:h('2.5%'),
+                    }}> Save </Text>
+
+                </View>
+               </View>
+
+{/* Last Button */}
+
+<View style={{ alignItems:'center'}}>
+               <View style={{
+                    height:h('8%'),
+                    width:w('85%'),
+                    backgroundColor:'#367460',
+                    borderRadius:h('4%'),
+                    alignItems:'center',
+                    justifyContent:'center',
+                    marginTop: h('3%'),
+                    marginBottom: h('1.6%'),
+                }}>
+                    <Text style={{
+                        color:'#fff',
+                        fontWeight:'500',
+                        fontSize:h('2.5%'),
+                    }}> Update Recipe Now </Text>
+
+                </View>
+               </View>
+
 
 
                 </ScrollView>
