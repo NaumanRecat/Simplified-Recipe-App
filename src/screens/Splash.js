@@ -62,6 +62,7 @@ export class Splash extends React.Component{
                <View>
                    <StylishInput 
                    img={require('../assests/lock.png')}
+                   placeholder={'Enter Invitation Code'}
                    />
                </View>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, SafeAreaView, Image} from 'react-native';
+import {View, Text, SafeAreaView, Image,TouchableOpacity} from 'react-native';
 
 import {widthPercentageToDP as w, heightPercentageToDP as h} from 'react-native-responsive-screen';
 import { StylishInput } from "../components/StylishInput";
@@ -25,6 +25,7 @@ export class Signup extends React.Component{
                 <Text style={{
                     fontWeight:'600',
                     fontSize:h('5%'),
+                    color:'#000'
                 }}>
                     Welcome
                 </Text>
@@ -38,19 +39,21 @@ export class Signup extends React.Component{
                     marginTop:h('2%'),
                     alignItems:'center',
                 }}>
-                    <StylishInput/>
-                    <StylishInput/>
-                    <StylishInput/>
-                    <StylishInput/>
-                    <StylishInput/>
+                    <StylishInput img={require('../assests/userb.png')} placeholder={'Upload Profile Image'} />
+                    <StylishInput img={require('../assests/userb.png')} placeholder={'Username'} />
+                    <StylishInput img={require('../assests/email.png')} placeholder={'Email'}  />
+                    <StylishInput img={require('../assests/lock.png')} placeholder={'Password'}  />
+                    <StylishInput img={require('../assests/lock.png')} placeholder={'Confirm Password'} />
                     
                     
                 </View>
 
 
-                <View style={{
+                <TouchableOpacity onPress={()=>{
+                    this.props.navigation.navigate('Recipe')
+                }} style={{
                     alignItems:'flex-end',
-                    marginTop: h('2%'),
+                    marginTop: h('1%'),
                     marginRight: h('3%'),
                     // backgroundColor:'#ada',
                     height: h('13%'),
@@ -58,7 +61,7 @@ export class Signup extends React.Component{
                     <Image source={require('../assests/Group.png')} />
                     
                     
-                </View>
+                </TouchableOpacity>
 
                 <View style={{
                     alignItems:'center',
