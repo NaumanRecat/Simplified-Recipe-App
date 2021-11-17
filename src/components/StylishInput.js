@@ -40,7 +40,7 @@ export class StylishInput extends React.Component{
             borderRadius: h('4%'),
             marginLeft: h('0.7%'),
         }}
-        placeholder="Enter Invite Code"
+        placeholder={this.props.placeholder}
         ></TextInput>
 
         </View>
