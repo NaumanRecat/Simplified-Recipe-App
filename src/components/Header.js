@@ -17,8 +17,8 @@ export class Header extends React.Component{
             }}>
                  <View style={{
                       height: h('8%'),
-                      width: w('50%'),
-                    //   backgroundColor: '#ac2',
+                      width: w('45%'),
+                      // backgroundColor: '#ac2',
                       justifyContent:'center',
                       marginLeft: h('2%'),
                  }}>
@@ -27,13 +27,14 @@ export class Header extends React.Component{
 
                  <View style={{
                       height: h('8%'),
-                      width: w('44%'),
-                    //   backgroundColor: '#ac2',
+                      width: w('45%'),
+                      // backgroundColor: '#ada',
                       alignItems:'flex-end',
                       justifyContent:'center',
-                      marginRight: h('2%'),
+                      marginRight: h('3%'),
+                      
                  }} >
-                 <Image  source={require('../assests/plus.jpg')} />
+                 <Image source={this.props.head } />
                  </View>
 
 

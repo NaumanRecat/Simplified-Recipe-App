@@ -151,7 +151,7 @@ export class Friend extends React.Component{
         return(
             <SafeAreaView style={{flex:1}}>
                 <View style={{flex:1}}>
-                    <Header/>
+                    <Header head={require('../assests/pp.png')}  />
                     <View style={{
                         height: h('92%'),
                         width: w('100%'),

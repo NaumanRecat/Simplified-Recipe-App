@@ -17,7 +17,7 @@ export class RecipeDes extends React.Component{
                 <View style={{
                     flex:1,
                 }}>
-                    <Header/>
+                    <Header />
                     {/* Step 1 */}
                     <View style={{
                         height:h('9%'),

@@ -29,10 +29,10 @@ state ={
 
                  }}>
                     <Header/>
-                    <Text style={{fontSize:h('3%'), color:'#000', fontWeight:'500', marginLeft: h('3%')}}>My Profile</Text>
+                    <Text style={{fontSize:h('3%'), color:'#000', fontWeight:'500', marginLeft: h('3%'), marginTop:h('3%')}}>My Profile</Text>
 
                     <View style={{
-                        height:h('15%'),
+                        height:h('20%'),
                         width:w('100%'),
                         // backgroundColor:'#342',
                         alignItems:'center',
