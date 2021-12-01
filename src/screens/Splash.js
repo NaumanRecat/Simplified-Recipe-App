@@ -1,11 +1,37 @@
-import React from "react";
+import React from 'react';
 import {View, Text, Image, Button, SafeAreaView, TouchableOpacity} from 'react-native';
 
 import { StylishInput } from "../components/StylishInput";
 
 import {widthPercentageToDP as w, heightPercentageToDP as h} from 'react-native-responsive-screen';
+import PushNotification from "react-native-push-notification";
+import { useEffect } from 'react';
 
 export class Splash extends React.Component{
+
+    componentDidMount = () => {
+      
+        this.createChannels();
+      };
+
+createChannels =()=>{
+       PushNotification.createChannel(
+           {
+               channelId:"test-channel",
+               channelName:"Test-channel"
+           }
+       )
+}
+
+handleNotification=()=>{
+    PushNotification.localNotification({
+        channelId:"test-channel",
+        title:"Kinza ",
+        message: "Kinza you are my love i love you so much can you be my girlfriend",
+    })
+}
+
+
     render(){
         return(
             <SafeAreaView style={{ flex:1}}>
@@ -38,7 +64,7 @@ export class Splash extends React.Component{
 
 
                <TouchableOpacity onPress={()=>{
-                   this.props.navigation.navigate('Login')
+                   this.handleNotification()
                }} style={{ alignItems:'center'}}>
                <View style={{
                     height:h('8%'),
