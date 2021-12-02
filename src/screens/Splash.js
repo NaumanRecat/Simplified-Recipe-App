@@ -27,8 +27,15 @@ handleNotification=()=>{
     PushNotification.localNotification({
         channelId:"test-channel",
         title:"Kinza ",
-        message: "Kinza you are my love i love you so much can you be my girlfriend",
-    })
+        message: "hi gow adww biy",     
+    });
+    PushNotification.localNotificationSchedule({
+        channelId: "test-channel",
+        title:"Alram",
+        message:"Hi how are you",
+        date: new Date(Date.now() + 20*1000),
+        allowWhileIdle:'true',
+    });
 }
 
 
